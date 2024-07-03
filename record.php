@@ -10,17 +10,25 @@
 <body>
 
   <!-- begin #content -->
-  <div id="content" class="content">
-
+  <div class="divHeader">
+    <header
+      style="transition: .5s;background: #fff;height: 50px;position: fixed;top: 0px;left: 0px;z-index: 99;box-shadow: 0 0 10px rgb(0 0 0 / 15%);width: 100%;">
+    </header>
+  </div>
+  <?php include ('./inc/inc-menu-bottom.php'); ?>
+  <div class="box-body">
+    <a href="javascript:history.back()" class="I-back" data-role="none">
+      <img src="assets/images/I-back.png" alt="">
+    </a>
     <div class="bg-gradient">
       <div class="container">
-        <h4 class="text-center pt-3 text-white text-line1">ประวัติ</h4>
+        <h4 class="text-center pt-4 text-white text-line1">ประวัติ</h4>
       </div>
       <div class="box-record">
         <h5 class="mb-3">รายการคำสั่งแลกสินค้า</h5>
 
         <div class="b-record">
-          <img class="mr-3" src="public/images/img-record.jpg" alt="">
+          <img class="mr-3" src="assets/images/img-record.jpg" alt="">
           <div class="b-record-text">
             <span>Lorem</span>
             <p>หมวกแก็บ คิดถึงมิลืมเลือน หมวกแก็บ คิดถึงมิลืมเลือน</p>
@@ -34,7 +42,7 @@
         </div>
 
         <div class="b-record">
-          <img class="mr-3" src="public/images/img-record.jpg" alt="">
+          <img class="mr-3" src="assets/images/img-record.jpg" alt="">
           <div class="b-record-text">
             <span>Lorem</span>
             <p>กระเป๋าผ้าดิบ</p>
@@ -48,7 +56,7 @@
         </div>
 
         <div class="b-record">
-          <img class="mr-3" src="public/images/img-record.jpg" alt="">
+          <img class="mr-3" src="assets/images/img-record.jpg" alt="">
           <div class="b-record-text">
             <span>Lorem</span>
             <p>น้ำมันมะพร้าวบีบเย็น 120 ml.</p>
@@ -62,7 +70,7 @@
         </div>
 
         <div class="b-record">
-          <img class="mr-3" src="public/images/img-record.jpg" alt="">
+          <img class="mr-3" src="assets/images/img-record.jpg" alt="">
           <div class="b-record-text">
             <span>Lorem</span>
             <p>หมวกผ้าขาวม้า</p>
@@ -80,10 +88,6 @@
 
   </div>
   <!-- end #content -->
-
-  <!-- begin menu bottom -->
-  <?php include ('./inc/inc-menu-bottom.php'); ?>
-  <!-- end menu bottom -->
 
   <?php include ('./inc/inc-script.php'); ?>
 </body>

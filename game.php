@@ -10,11 +10,19 @@
 <body>
 
   <!-- begin #content -->
-  <div id="content" class="content">
-
+  <div class="divHeader">
+    <header
+      style="transition: .5s;background: #fff;height: 50px;position: fixed;top: 0px;left: 0px;z-index: 99;box-shadow: 0 0 10px rgb(0 0 0 / 15%);width: 100%;">
+    </header>
+  </div>
+  <?php include ('./inc/inc-menu-bottom.php'); ?>
+  <div class="box-body">
+    <a href="javascript:history.back()" class="I-back back-color" data-role="none">
+      <img src="assets/images/I-back.png" alt="">
+    </a>
     <div class="box-game">
       <div class="container">
-        <h4 class="text-center pt-3">เกมส์</h4>
+        <h4 class="text-center pt-4">เกมส์</h4> 
         <div class="box-game-list">
 
           <a href="#">
@@ -53,10 +61,6 @@
 
   </div>
   <!-- end #content -->
-
-  <!-- begin menu bottom -->
-  <?php include ('./inc/inc-menu-bottom.php'); ?>
-  <!-- end menu bottom -->
 
   <?php include ('./inc/inc-script.php'); ?>
 </body>

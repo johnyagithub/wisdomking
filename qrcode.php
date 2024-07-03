@@ -10,12 +10,20 @@
 <body>
 
   <!-- begin #content -->
-  <div id="content" class="content">
-
+  <div class="divHeader">
+    <header
+      style="transition: .5s;background: #fff;height: 50px;position: fixed;top: 0px;left: 0px;z-index: 99;box-shadow: 0 0 10px rgb(0 0 0 / 15%);width: 100%;">
+    </header>
+  </div>
+  <?php include ('./inc/inc-menu-bottom.php'); ?>
+  <div class="box-body">
+    <a href="javascript:history.back()" class="I-back" data-role="none">
+      <img src="assets/images/I-back.png" alt="">
+    </a>
     <div class="box-qr">
       <h5 class="font-weight-light">Scan QR Code of the device</h5>
       <div class="square">
-        <img src="public/images/img-qr.png">
+        <img src="assets/images/img-qr.png">
         <div class="scan">
         </div>
       </div>
@@ -25,10 +33,6 @@
 
   </div>
   <!-- end #content -->
-
-  <!-- begin menu bottom -->
-  <?php include ('./inc/inc-menu-bottom.php'); ?>
-  <!-- end menu bottom -->
 
   <?php include ('./inc/inc-script.php'); ?>
 </body>

@@ -10,8 +10,16 @@
 <body>
 
   <!-- begin #content -->
-  <div id="content" class="content">
-
+  <div class="divHeader">
+    <header
+      style="transition: .5s;background: #fff;height: 50px;position: fixed;top: 0px;left: 0px;z-index: 99;box-shadow: 0 0 10px rgb(0 0 0 / 15%);width: 100%;">
+    </header>
+  </div>
+  <?php include ('./inc/inc-menu-bottom.php'); ?>
+  <div class="box-body">
+    <a href="javascript:history.back()" class="I-back" style="filter: hue-rotate(161deg) opacity(0.7);" data-role="none">
+      <img src="assets/images/I-back.png" alt="">
+    </a>
     <div class="box-coin">
       <div class="b-coin-head">
         <h2>เช็คอิน</h2>
@@ -19,54 +27,54 @@
         <h1>COINS</h1>
       </div>
       <div class="container">
-        <img src="public/images/Vector-Smart.png" class="img-cartoon">
+        <img src="assets/images/Vector-Smart.png" class="img-cartoon">
         <div class="box-checkinCoin">
           <ul class="d-flex">
             <li class="active">
               <div class="box">
-                <img class="mr-3" src="public/images/coin.png">
+                <img class="mr-3" src="assets/images/coin.png">
                 10
               </div>
               วันที่ 1
             </li>
             <li class="active">
               <div class="box">
-                <img class="mr-3" src="public/images/coin.png">
+                <img class="mr-3" src="assets/images/coin.png">
                 10
               </div>
               วันนี้
             </li>
             <li>
               <div class="box">
-                <img class="mr-3" src="public/images/coin.png">
+                <img class="mr-3" src="assets/images/coin.png">
                 10
               </div>
               วันที่ 3
             </li>
             <li>
               <div class="box">
-                <img class="mr-3" src="public/images/coin.png">
+                <img class="mr-3" src="assets/images/coin.png">
                 10
               </div>
               วันที่ 4
             </li>
             <li>
               <div class="box">
-                <img class="mr-3" src="public/images/coin.png">
+                <img class="mr-3" src="assets/images/coin.png">
                 10
               </div>
               วันที่ 5
             </li>
             <li>
               <div class="box">
-                <img class="mr-3" src="public/images/coin.png">
+                <img class="mr-3" src="assets/images/coin.png">
                 10
               </div>
               วันที่ 6
             </li>
             <li>
               <div class="box">
-                <img class="mr-3" src="public/images/coin.png">
+                <img class="mr-3" src="assets/images/coin.png">
                 10
               </div>
               วันที่ 7
@@ -79,10 +87,6 @@
 
   </div>
   <!-- end #content -->
-
-  <!-- begin menu bottom -->
-  <?php include ('./inc/inc-menu-bottom.php'); ?>
-  <!-- end menu bottom -->
 
   <?php include ('./inc/inc-script.php'); ?>
 </body>
