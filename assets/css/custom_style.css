@@ -20,6 +20,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+a.fancybox img {
+	max-width: 100%;
+}
+
 .box-profile3 {
 	margin-bottom: -100px;
 	position: relative;
@@ -642,18 +646,6 @@ body {
 			top: 32px;
 			left: auto;
 			right: 8px;
-		}
-
-	.fancybox-container .fancybox-toolbar {
-		right: 18px;
-    top: 18px;
-	}
-		.fancybox-container .fancybox-toolbar .fancybox-button--close {
-			background: #E5E5E5;
-			padding: 3px;
-			height: auto;
-			width: 27px;
-			border-radius: 50%;
 		}
 
 header.menu-pro-open ,

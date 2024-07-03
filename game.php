@@ -61,8 +61,6 @@
 
   </div>
   <!-- end #content -->
-
-  <?php include ('./inc/inc-script.php'); ?>
 </body>
 
 </html>
