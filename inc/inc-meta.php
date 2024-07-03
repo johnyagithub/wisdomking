@@ -10,7 +10,7 @@
 <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16">
 
 <!-- <link href="./plugins/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
-<link rel="stylesheet" type="text/css" href="./assets/css/custom_style.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/custom_style_new.css">
 <style>
   .box-body a.I-back:not(.back-color) {
     filter: brightness(0) invert(1);

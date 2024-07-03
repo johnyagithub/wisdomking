@@ -17,15 +17,63 @@
   </div>
   <?php include ('./inc/inc-menu-bottom.php'); ?>
   <div class="box-body">
-
-    <div class="box-qr">
-      <h5 class="font-weight-light">Scan QR Code of the device</h5>
-      <div class="square">
-        <img src="assets/images/img-qr.png">
-        <div class="scan">
-        </div>
+    <a href="javascript:history.back()" class="I-back" data-role="none">
+      <img src="assets/images/I-back.png" alt="">
+    </a>
+    <div class="bg-gradient">
+      <div class="container">
+        <h4 class="text-center pt-4 text-white text-line1">วิดีโอ</h4>
       </div>
-      <button type="button" class="btn-gradient">สแกน QR</button>
+
+      <div class="box-profile3 text-score">
+        <img src="assets/images/img-profile3.jpg" alt="">
+        <h5 class="mb-0 text-center text-line1">Lorem</h5>
+        <p class="mt-0 mb-3 text-center text-line1">9,999 คะแนน</p>
+      </div>
+
+      <div class="box-record">
+        <div class="box-knot">
+
+          <div class="b-knot">
+            <img src="assets/images/knot1.png">
+            <p class="text-center text-line1">Lorem</p>
+          </div>
+          <div class="b-knot">
+            <img src="assets/images/knot2.png">
+            <p class="text-center text-line1">Lorem</p>
+          </div>
+          <div class="b-knot">
+            <img src="assets/images/knot3.png">
+            <p class="text-center text-line1">Lorem</p>
+          </div>
+          <div class="b-knot">
+            <img src="assets/images/knot4.png">
+            <p class="text-center text-line1">Lorem</p>
+          </div>
+          <div class="b-knot">
+            <img src="assets/images/knot5.png">
+            <p class="text-center text-line1">Lorem</p>
+          </div>
+          <div class="b-knot">
+            <img src="assets/images/knot6.png">
+            <p class="text-center text-line1">Lorem</p>
+          </div>
+          <div class="b-knot">
+            <img src="assets/images/knot.png">
+            <p class="text-center text-line1">Lorem</p>
+          </div>
+          <div class="b-knot">
+            <img src="assets/images/knot.png">
+            <p class="text-center text-line1">Lorem</p>
+          </div>
+          <div class="b-knot">
+            <img src="assets/images/knot.png">
+            <p class="text-center text-line1">Lorem</p>
+          </div>
+
+        </div>
+        <button type="button" class="btn-gradient">แลกของรางวัล</button>
+      </div>
     </div>
 
   </div>
