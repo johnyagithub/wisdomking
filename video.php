@@ -11,12 +11,12 @@
 
   <!-- begin #content -->
   <div class="divHeader">
-    <header
-      style="transition: .5s;background: #fff;height: 50px;position: fixed;top: 0px;left: 0px;z-index: 99;box-shadow: 0 0 10px rgb(0 0 0 / 15%);width: 100%;">
-    </header>
+    <?php include ('./inc/inc-header.php'); ?>
   </div>
   <?php include ('./inc/inc-menu-bottom.php'); ?>
   <div class="box-body">
+    
+    <div class="box-body">
     <a href="javascript:history.back()" class="I-back" data-role="none">
       <img src="assets/images/I-back.png" alt="">
     </a>
@@ -72,7 +72,7 @@
           </div>
 
         </div>
-        <button type="button" class="btn-gradient">แลกของรางวัล</button>
+        <button type="button" class="btn-gradient mb-0">แลกของรางวัล</button>
       </div>
     </div>
 

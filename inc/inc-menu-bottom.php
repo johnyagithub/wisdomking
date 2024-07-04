@@ -16,7 +16,7 @@
     <span>ลำดับคะแนน</span>
   </div>
   <div class="iconB">
-    <a href=".php">
+    <a href="redeempoints.php">
       <div class="icon">
         <img src="assets/images/icon-gift.png">
       </div>
