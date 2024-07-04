@@ -1,4 +1,5 @@
-<meta charset="UTF-8">
+<!-- ///////////////// โค้ตเดิม //////////////// -->
+ <meta charset="UTF-8">
 <meta http-equiv="Content-Security-Policy"
   content="default-src * gap: ws: https://ssl.gstatic.com;style-src * 'unsafe-inline' 'self' data: blob:;script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;img-src * data: 'unsafe-inline' 'self' content:;fmedia-src mediastream;">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -43,9 +44,9 @@
 <link rel="stylesheet" type="text/css"
   href="http://app.wisdomking.or.th/mobileApp/assets/plugins/owlcarousel/owl.theme.default.css">
 <!-- fancyBox -->
-<!-- <link rel="stylesheet" type="text/css"
-  href="http://app.wisdomking.or.th/mobileApp/assets/plugins/fancyBox/source/jquery.fancybox.css?v=2.1.5"
-  media="screen" /> -->
+<link rel="stylesheet" type="text/css"
+  href="./assets/plugins/fancyBox/source/jquery.fancybox.css?v=2.1.5"
+  media="screen" />
 
 <script type="text/javascript" src="http://app.wisdomking.or.th/mobileApp/assets/js/jquery-1.9.1.js"></script>
 <link href="http://app.wisdomking.or.th/mobileApp/assets/css/loadingHelper.css" rel="stylesheet" type="text/css" />
@@ -55,12 +56,11 @@
 <link rel="stylesheet" href="http://app.wisdomking.or.th/mobileApp/assets/css/jquery-ui.css">
 
 <!-- fancyBox -->
-<!-- <script type="text/javascript"
-  src="http://app.wisdomking.or.th/mobileApp/assets/plugins/fancyBox/source/jquery.fancybox.js?v=2.1.5"></script> -->
+<script type="text/javascript"
+  src="./assets/plugins/fancyBox/source/jquery.fancybox.js?v=2.1.5"></script>
 
-<!-- fancyBox3 -->
-<link rel="stylesheet" type="text/css" href="./plugins/fancyBox3/dist/jquery.fancybox.css" media="screen">
-<script type="text/javascript" src="./plugins/fancyBox3/dist/jquery.fancybox.min.js"></script>
+<!-- ///////////////// เขียนเพิ่มจากเดิม //////////////// -->
+<!-- เพิ่มโค้ตส่วนนี้เข้าไป และอัพไฟล์ plugins/fancyBox อันใหม่เข้าไป -->
 <script>
   $(function () {
     $('a[fancybox-video]').fancybox({
