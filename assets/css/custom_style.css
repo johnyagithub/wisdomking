@@ -519,6 +519,9 @@ a.fancybox img {
 	border: 15px solid #fff;
 	border-top-width: 20px;
 }
+	.box-record a {
+		color: #000;
+	}
 	.box-record > h5 {
 		max-width: 600px;
 		margin-left: auto;
@@ -1171,6 +1174,7 @@ body.orderscore .box-orderscore {
 			top: 32px;
 			left: auto;
 			right: 8px;
+			z-index: 2;
 		}
 
 header.menu-pro-open ,

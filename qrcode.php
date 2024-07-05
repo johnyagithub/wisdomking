@@ -27,7 +27,7 @@
         </div>
       </div>
       <!-- <button type="button" class="btn-gradient">สแกน QR</button> -->
-      <a class="btn-gradient text-center" data-fancybox fancybox-video href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">สแกน QR</a>
+      <a class="btn-gradient text-center" data-fancybox fancybox-video href="https://www.youtube.com/watch?v=UIHPIESyIXM&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&amp;autohide=1">สแกน QR</a>
     </div>
 
   </div>

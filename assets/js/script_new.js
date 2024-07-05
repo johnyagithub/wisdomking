@@ -31,6 +31,7 @@ $(function () {
     navText: ["<img src='./assets/images/owl-nav.png'>","<img src='./assets/images/owl-nav.png'>"],
     dots: false,
     lazyLoad: true,
-    items: 1
+    items: 1,
+    autoHeight: true,
   });
 });

@@ -25,10 +25,19 @@
         <img src="assets/images/product-slide.jpg" alt="">
       </div>
       <div class="item">
-        <img src="assets/images/product-slide.jpg" alt="">
+        <img src="assets/images/img-product1.jpg" alt="">
       </div>
       <div class="item">
-        <img src="assets/images/product-slide.jpg" alt="">
+        <img src="assets/images/img-product3.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="assets/images/img-product4.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="assets/images/img-product5.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="assets/images/img-product6.jpg" alt="">
       </div>
     </div>
 
