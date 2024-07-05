@@ -14,7 +14,7 @@
     <?php include ('./inc/inc-header.php'); ?>
   </div>
   <?php include ('./inc/inc-menu-bottom.php'); ?>
-  <div class="box-body">
+  <div class="box-body" style="max-width: none;">
     
     <a href="javascript:history.back()" class="I-back" style="filter: hue-rotate(161deg) opacity(0.7);" data-role="none">
       <img src="assets/images/I-back.png" alt="">
