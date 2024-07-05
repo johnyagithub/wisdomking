@@ -1,5 +1,8 @@
 :root {
 	--bg-gradient : linear-gradient(91.02deg, #3FBEA1 0%, #398BDD 100%);
+	--orderscore-gradient1 : linear-gradient(91.02deg, #FFE8A2 0%, #FED072 100%);
+	--orderscore-gradient2 : linear-gradient(91.02deg, #A2FFCD 0%, #72DCFE 100%);
+	--orderscore-gradient3 : linear-gradient(91.02deg, #A2BCFF 0%, #C972FE 100%);
 }
 
 body {
@@ -15,9 +18,7 @@ body {
 	background-color: #ECECEC;
 }
 .text-gradient {
-  background: -webkit-linear-gradient(91.02deg, #3FBEA1 0%, #398BDD 100%);
-  background: -moz-linear-gradient(91.02deg, #3FBEA1 0%, #398BDD 100%);
-  background: linear-gradient(91.02deg, #3FBEA1 0%, #398BDD 100%);
+  background: var(--bg-gradient);
   background-clip:text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -57,6 +58,7 @@ a.fancybox img {
 	background: linear-gradient(91.02deg, #FFE8A2 0%, #FED072 100%);
 	position: fixed;
 	inset: 50px 0 auto 0;
+	z-index: 10;
 }
 	.box-checkin::after {
 		content: "";
@@ -88,8 +90,8 @@ a.fancybox img {
 .box-coin {
 	min-height: calc(100vh - 50px);
 	background-image: url(../images/coin1.png), url(../images/coin2.png), url(../images/coin3.png), url(../images/coin4.png), url(../images/bg-coin.jpg);
-	background-position: 100% -55px, 0px calc(100% - 65px), 26px 116px, calc(100% - 60px) 258px, center;
-	background-size: 100px, 75px, 55px, 80px, cover;
+	background-position: 100% -55px, 0px calc(100% - 60px), 26px 60px, calc(100% - 71px) 199px, center;
+	background-size: 100px, 75px, 65px, 90px, cover;
 	background-repeat: no-repeat;
 	padding-bottom: 125px;
 }
@@ -106,17 +108,16 @@ a.fancybox img {
 			line-height: 1;
 			margin-bottom: 0px;
 			letter-spacing: 4px;
+			font-weight: 600;
 		}
 		.box-coin .b-coin-head h2 {
 			font-size: 50px;
 			line-height: 1;
-			font-weight: 300;
 		}
 		.box-coin .b-coin-head h4 {
 			font-size: 30px;
 			line-height: 1;
 			margin-bottom: 0px;
-			font-weight: 300;
 		}
 
 		.box-coin img.img-cartoon {
@@ -577,7 +578,7 @@ a.fancybox img {
 				bottom: 3px;
 				transform: translateX(-50%);
 				border-image-slice: 1;
-				border-image-source: linear-gradient(91.02deg, #3FBEA1 0%, #398BDD 100%);
+				border-image-source: var(--bg-gradient);
 			}
 
 	.box-record .b-record:last-child {
@@ -851,6 +852,249 @@ a.fancybox img {
 					inset: 0;
 					opacity: 0.8;
 				}
+
+.box-order123 {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	align-items: end;
+	counter-reset: item;
+	margin-top: 25px;
+}
+.box-order123::before {
+	content: "";
+	position: absolute;
+	inset: auto 0 0 0;
+	background-color: #fff;
+	border-radius: 16px 16px 0 0;
+	height: calc(50% + 26px);
+}
+	.box-order123 .b-orderscore {
+		z-index: 1;
+		text-align: center;
+		margin: 10px;
+		font-size: 13px;
+		position: relative;
+		width: 80px;
+		transition: .5s;
+	}
+	.box-order123 .b-orderscore:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+		display: none;
+	}
+	.box-order123 .b-orderscore:nth-child(1) {
+		width: 135px;
+	}
+	.box-order123 .b-orderscore:nth-child(2) {
+		order: -1;
+	}
+	body.orderscore .box-order123 .b-orderscore {
+		width: 57px;
+	}
+	body.orderscore .box-order123 .b-orderscore:nth-child(1) {
+		width: 95px;
+	}
+		.box-order123 .b-orderscore:nth-child(1)::before {
+			content: "";
+			background: url(../images/Subtract.png) no-repeat center bottom;
+			background-size: contain;
+			width: 24px;
+			aspect-ratio: 1;
+			position: absolute;
+			top: 1px;
+			left: 50%;
+			transform: translate(-50%, -100%);
+			transition: .5s;
+		}
+		body.orderscore .box-order123 .b-orderscore:nth-child(1)::before {
+			width: 16px;
+		}
+		.box-order123 .b-orderscore::after {
+			content: counters(item, ".") " ";
+			counter-increment: item;
+			position: absolute;
+			bottom: 55px;
+			font-size: 20px;
+			color: #fff;
+			border-radius: 7px;
+			background: var(--bg-gradient);
+			width: 30px;
+			aspect-ratio: 1;
+			left: 50%;
+			transform: translateX(-50%);
+			font-weight: 500;
+			transition: .5s;
+		}
+		body.orderscore .box-order123 .b-orderscore::after {
+			font-size: 14px;
+			width: 21px;
+		}
+		.box-order123 .b-orderscore:nth-child(1)::after {
+			background: var(--orderscore-gradient1);
+		}
+		.box-order123 .b-orderscore:nth-child(2)::after {
+			background: var(--orderscore-gradient2);
+		}
+		.box-order123 .b-orderscore:nth-child(3)::after {
+			background: var(--orderscore-gradient3);
+		}
+		.box-order123 .b-orderscore img {
+			background: var(--bg-gradient);
+			padding: 4px;
+			border-radius: 50%;
+			width: 100%;
+			aspect-ratio: 1;
+			object-fit: cover;
+			margin: 0px auto 20px auto;
+			display: block;
+			transition: .5s;
+		}
+		body.orderscore .box-order123 .b-orderscore img {
+			margin-bottom: 13px;
+			padding: 3px;
+		}
+		.box-order123 .b-orderscore:nth-child(1) img {
+			background: var(--orderscore-gradient1);
+		}
+		.box-order123 .b-orderscore:nth-child(2) img {
+			background: var(--orderscore-gradient2);
+		}
+		.box-order123 .b-orderscore:nth-child(3) img {
+			background: var(--orderscore-gradient3);
+		}
+		.box-order123 .b-orderscore h5 {
+			font-size: 13px;
+			margin-bottom: 2px;
+		}
+		.box-order123 .b-orderscore p {
+			margin-top: 0px;
+		}
+			.box-order123 .b-orderscore p b {
+				font-weight: 100;
+			}
+
+.box-orderscore {
+	counter-reset: item;
+	background-color: #fff;
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: calc(100vh - 526px);
+	min-height: 141px;
+	transition: .5s;
+	display: flex;
+	flex-direction: column;
+}
+body.orderscore .box-orderscore {
+	max-height: calc(100vh - 479px);
+}
+	.box-orderscore .b-orderscore {
+		position: relative;
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px 20px;
+	}
+	#orderscore {
+		order: -1;
+    transform: translateY(-360px);
+	}
+	.box-orderscore .b-orderscore.me {
+    background: #F3F3F3E5;
+	}
+		.box-orderscore .b-orderscore.me * {
+			background: var(--bg-gradient);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		.box-orderscore .b-orderscore::before {
+			content: counters(item, ".") " ";
+			counter-increment: item;
+			position: absolute;
+			font-size: 12px;
+			color: #fff;
+			border-radius: 7px;
+			background: #706D6D;
+			width: 24px;
+			height: 24px;
+			aspect-ratio: 1;
+			left: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			font-weight: 500;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.box-orderscore .b-orderscore:nth-child(1)::before {
+			background: var(--orderscore-gradient1);
+		}
+		.box-orderscore .b-orderscore:nth-child(2)::before {
+			background: var(--orderscore-gradient2);
+		}
+		.box-orderscore .b-orderscore:nth-child(3)::before {
+			background: var(--orderscore-gradient3);
+		}
+		.box-orderscore .b-orderscore.me::before {
+			background: var(--bg-gradient);
+		}
+		.box-orderscore .b-orderscore[data-order]::before {
+			content: attr(data-order);
+		}
+		.box-orderscore .b-orderscore img {
+			border-radius: 50%;
+			width: 48px;
+			aspect-ratio: 1;
+			object-fit: cover;
+			display: block;
+			margin-left: 12px;
+			margin-right: 12px;
+		}
+		.box-orderscore .b-orderscore h5 {
+			margin: 0px;
+		}
+		.box-orderscore .b-orderscore p {
+			margin: 0px 0px 0px auto;
+		}
+			.box-orderscore .b-orderscore p b {
+				font-size: 20px;
+				font-weight: 100;
+			}
+
+		.box-orderscore .b-orderscore::after {
+			content: "";
+			background: url(../images/chevron-top-square.png);
+			display: block;
+			width: 16px;
+			height: 16px;
+			margin-left: 10px;
+		}
+		.box-orderscore .b-orderscore.down::after {
+			filter: hue-rotate(172deg);
+			transform: rotate(180deg);
+		}
+
+.box-tabmenu {
+	background: rgb(0 0 0 / 10%);
+	border-radius: 4px;
+	padding: 0px 8px;
+	margin: 20px;
+	display: flex;
+	flex-flow: wrap;
+}
+	.box-tabmenu a {
+		color: #fff;
+		font-weight: 500;
+		padding: 10px;
+		min-width: calc(100% / 4);
+		text-align: center;
+		border-bottom: 2px solid transparent;
+		font-size: 12px;
+	}
+	.box-tabmenu a.active {
+		border-color: #fff;
+		font-weight: 600;
+	}
 
 .box-menu-bottom {
 	border-radius: 16px;

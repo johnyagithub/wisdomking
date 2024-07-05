@@ -16,7 +16,6 @@
   <?php include ('./inc/inc-menu-bottom.php'); ?>
   <div class="box-body">
     
-    <div class="box-body">
 
     <div class="box-checkin">
       <div class="container">

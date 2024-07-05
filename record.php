@@ -15,8 +15,7 @@
   </div>
   <?php include ('./inc/inc-menu-bottom.php'); ?>
   <div class="box-body">
-    
-    <div class="box-body">
+
     <a href="javascript:history.back()" class="I-back" data-role="none">
       <img src="assets/images/I-back.png" alt="">
     </a>

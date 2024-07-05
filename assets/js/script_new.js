@@ -15,6 +15,15 @@ $(function () {
       }
     });
   });
+  jQuery('.box-orderscore').scroll(function (event) {
+      jQuery("#orderscore").each(function () {
+      if ($("#orderscore").visible(true)) {
+        $('body').removeClass("orderscore");
+      } else {
+        $('body').addClass("orderscore");
+      }
+    });
+  });
 
   $("#product-slide").owlCarousel({
     margin: 0,

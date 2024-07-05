@@ -16,7 +16,6 @@
   <?php include ('./inc/inc-menu-bottom.php'); ?>
   <div class="box-body">
     
-    <div class="box-body">
     <a href="javascript:history.back()" class="I-back" style="filter: hue-rotate(161deg) opacity(0.7);" data-role="none">
       <img src="assets/images/I-back.png" alt="">
     </a>
@@ -80,7 +79,8 @@
               วันที่ 7
             </li>
           </ul>
-          <button type="button" class="btn-gradient disabled">รับ COINS</button>
+          <!-- กดแล้วเพิ่มคล้าส disabled -->
+          <button type="button" class="btn-gradient">รับ COINS</button>
         </div>
       </div>
     </div>

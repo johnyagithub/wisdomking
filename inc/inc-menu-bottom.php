@@ -8,7 +8,7 @@
     <span>เกมส์</span>
   </div>
   <div class="iconB">
-    <a href=".php">
+    <a href="score-order.php">
       <div class="icon">
         <img src="assets/images/icon-number.png">
       </div>
