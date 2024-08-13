@@ -16,7 +16,7 @@ $(function () {
     });
   });
   jQuery('.box-orderscore').scroll(function (event) {
-      jQuery("#orderscore").each(function () {
+    jQuery("#orderscore").each(function () {
       if ($("#orderscore").visible(true)) {
         $('body').removeClass("orderscore");
       } else {
@@ -28,10 +28,16 @@ $(function () {
   $("#product-slide").owlCarousel({
     margin: 0,
     nav: true,
-    navText: ["<img src='./assets/images/owl-nav.png'>","<img src='./assets/images/owl-nav.png'>"],
+    navText: ["<img src='./assets/images/owl-nav.png'>", "<img src='./assets/images/owl-nav.png'>"],
     dots: false,
     lazyLoad: true,
     items: 1,
     autoHeight: true,
   });
 });
+
+window.onload = function () {
+  setTimeout(() => {
+    $('body').addClass('Loaded');
+  }, 200);
+} 
