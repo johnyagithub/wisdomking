@@ -3,7 +3,7 @@
 
 <head>
 
-  <?php include ('./inc/inc-meta.php'); ?>
+  <?php include('./inc/inc-meta.php'); ?>
 
 </head>
 
@@ -11,9 +11,9 @@
 
   <!-- begin #content -->
   <div class="divHeader">
-    <?php include ('./inc/inc-header.php'); ?>
+    <?php include('./inc/inc-header.php'); ?>
   </div>
-  <?php include ('./inc/inc-menu-bottom.php'); ?>
+  <?php include('./inc/inc-menu-bottom.php'); ?>
   <div class="box-body" style="max-width: none;">
 
     <a href="javascript:history.back()" class="I-back" data-role="none">
@@ -30,15 +30,24 @@
           <div class="b-record">
             <img class="mr-3" src="assets/images/img-record.jpg" alt="">
             <div class="b-record-text">
-              <span>Lorem</span>
               <p>หมวกแก็บ คิดถึงมิลืมเลือน หมวกแก็บ คิดถึงมิลืมเลือน</p>
             </div>
-            <di>
+            <div>
               <div class="b-date">24/03/2023</div>
               <div class="box-numbercoins">
                 <span class="text-gradient">200</span>
               </div>
-            </di>
+            </div>
+          </div>
+        </a>
+        <a href="#" data-fancybox data-src="#popup-content" onclick="$('#imgScanQRCode').attr('src','assets/images/img-QR2.png')">
+          <div class="b-record-qr">
+            <img src="assets/images/icon-record1.png" alt="">
+            <div class="b-record-text">
+              <p class="text-gradient mb-0">คุณได้ทำการแลกสินค้าแล้ว</p>
+              <p>กรุณาให้เจ้าหน้าที่ Scan QR Code เพื่อรับสินค้า</p>
+            </div>
+            <img class="record-qr" src="assets/images/icon-record3.png" alt="">
           </div>
         </a>
 
@@ -46,15 +55,22 @@
           <div class="b-record">
             <img class="mr-3" src="assets/images/img-record.jpg" alt="">
             <div class="b-record-text">
-              <span>Lorem</span>
               <p>กระเป๋าผ้าดิบ</p>
             </div>
-            <di>
+            <div>
               <div class="b-date">24/03/2023</div>
               <div class="box-numbercoins">
                 <span class="text-gradient">20</span>
               </div>
-            </di>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="b-record-qr">
+            <img src="assets/images/icon-record2.png" alt="">
+            <div class="b-record-text">
+              <p class="text-gradient mb-0">คุณได้รับสินค้าเรียบร้อยแล้ว</p>
+            </div>
           </div>
         </a>
 
@@ -62,15 +78,24 @@
           <div class="b-record">
             <img class="mr-3" src="assets/images/img-record.jpg" alt="">
             <div class="b-record-text">
-              <span>Lorem</span>
               <p>น้ำมันมะพร้าวบีบเย็น 120 ml.</p>
             </div>
-            <di>
+            <div>
               <div class="b-date">24/03/2023</div>
               <div class="box-numbercoins">
                 <span class="text-gradient">80</span>
               </div>
-            </di>
+            </div>
+          </div>
+        </a>
+        <a href="#" data-fancybox data-src="#popup-content" onclick="$('#imgScanQRCode').attr('src','assets/images/img-QR2.png')">
+          <div class="b-record-qr">
+            <img src="assets/images/icon-record1.png" alt="">
+            <div class="b-record-text">
+              <p class="text-gradient mb-0">คุณได้ทำการแลกสินค้าแล้ว</p>
+              <p>กรุณาให้เจ้าหน้าที่ Scan QR Code เพื่อรับสินค้า</p>
+            </div>
+            <img class="record-qr" src="assets/images/icon-record3.png" alt="">
           </div>
         </a>
 
@@ -78,15 +103,22 @@
           <div class="b-record">
             <img class="mr-3" src="assets/images/img-record.jpg" alt="">
             <div class="b-record-text">
-              <span>Lorem</span>
               <p>หมวกผ้าขาวม้า</p>
             </div>
-            <di>
+            <div>
               <div class="b-date">24/03/2023</div>
               <div class="box-numbercoins">
                 <span class="text-gradient">100</span>
               </div>
-            </di>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="b-record-qr">
+            <img src="assets/images/icon-record2.png" alt="">
+            <div class="b-record-text">
+              <p class="text-gradient mb-0">คุณได้รับสินค้าเรียบร้อยแล้ว</p>
+            </div>
           </div>
         </a>
 
@@ -95,6 +127,15 @@
 
   </div>
   <!-- end #content -->
+  <!--  popup -->
+  <div id="popup-content" style="display:none;max-width:500px;">
+    <h3 class="text-gradient text-center font-weight-bold mb-0">Scan QR Code</h3>
+    <div class="text-center d-flex justify-content-center align-items-center">
+      <h4>เพื่อรับสินค้า</h3>
+    </div>
+    <img style="max-width:100%;" id="imgScanQRCode" src="assets/images/Coins.png">
+  </div>
+  <!-- end popup -->
 </body>
 
 </html>

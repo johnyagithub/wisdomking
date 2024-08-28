@@ -44,7 +44,7 @@
             <a href="product-detail2.php">
               <img src="assets/images/img-product1.jpg" alt="">
               <div class="b-record-text">
-                <span>Lorem</span>
+                <span class="treasury">คลัง : 99</span>
                 <p>เสื้อม่อฮ่อม แขนสั้น</p>
               </div>
               <div class="box-numbercoins">
@@ -57,7 +57,7 @@
             <a href="product-detail2.php">
               <img src="assets/images/img-product2.jpg" alt="">
               <div class="b-record-text">
-                <span>Lorem</span>
+                <span class="treasury">คลัง : 99</span>
                 <p>กระเป๋าสาน</p>
               </div>
               <div class="box-numbercoins">
@@ -70,7 +70,7 @@
             <a href="product-detail2.php">
               <img src="assets/images/img-product3.jpg" alt="">
               <div class="b-record-text">
-                <span>Lorem</span>
+                <span class="treasury">คลัง : 99</span>
                 <p>กระเป๋าผ้าขาวม้าตาไก่</p>
               </div>
               <div class="box-numbercoins">
@@ -83,7 +83,7 @@
             <a href="product-detail2.php">
               <img src="assets/images/img-product4.jpg" alt="">
               <div class="b-record-text">
-                <span>Lorem</span>
+                <span class="treasury soldout">สินค้าหมด</span>
                 <p>กระเป๋าจูด</p>
               </div>
               <div class="box-numbercoins">
@@ -96,7 +96,7 @@
             <a href="product-detail2.php">
               <img src="assets/images/img-product5.jpg" alt="">
               <div class="b-record-text">
-                <span>Lorem</span>
+                <span class="treasury">คลัง : 99</span>
                 <p>กระเป๋าผ้าขาวม้า</p>
               </div>
               <div class="box-numbercoins">
@@ -109,7 +109,7 @@
             <a href="product-detail2.php">
               <img src="assets/images/img-product6.jpg" alt="">
               <div class="b-record-text">
-                <span>Lorem</span>
+                <span class="treasury">คลัง : 99</span>
                 <p>น้ำมันมะพร้าวบีบเย็น 120 ml.</p>
               </div>
               <div class="box-numbercoins">

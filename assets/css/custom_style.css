@@ -104,7 +104,7 @@ a.fancybox img {
 .box-coin {
 	min-height: calc(100vh - 50px);
 	background-image: url(../images/coin1.png), url(../images/coin2.png), url(../images/coin3.png), url(../images/coin4.png), url(../images/bg-coin.jpg);
-	background-position: 100% -55px, 0px calc(100% - 60px), 26px 60px, calc(100% - 71px) 199px, center;
+	background-position: 100% -55px, 0px calc(100% - 60px), 26px 175px, calc(100% - 71px) 324px, center;
 	background-size: 100px, 75px, 65px, 90px, cover;
 	background-repeat: no-repeat;
 	padding-bottom: 125px;
@@ -207,6 +207,39 @@ a.fancybox img {
 			opacity: 0.4;
 		}
 
+.box-coin .box-MyCoins {
+	border-radius: 16px;
+	background: rgb(224 127 12 / 60%);
+	padding: 10px 16px;
+	color: #fff;
+	margin-top: 58px;
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 18px;
+}
+	.box-coin .box-MyCoins a.record {
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    background: rgb(204 117 14 / 80%) url(../images/btn-right.png) no-repeat calc(100% - 13px);
+    padding: 0px 25px 0px 17px;
+    border-radius: 50px;
+	}
+	.box-coin .box-MyCoins .b-coin {
+		display: flex;
+		align-items: center;
+		margin-top: 7px;
+	}
+		.box-coin .box-MyCoins .b-coin img {
+			width: 24px;
+		}
+		.box-coin .box-MyCoins .b-coin h1 {
+			font-size: 24px;
+			margin: 0px;
+			font-weight: bold;
+		}
+
 #product-slide {
 
 }
@@ -246,6 +279,7 @@ a.fancybox img {
 .box-details {
 	color:  #666666;
 	padding: 25px 15px;
+	position: relative;
 }
 	.box-details > span {
 		background: var(--bg-gradient);
@@ -258,6 +292,19 @@ a.fancybox img {
 		text-overflow: ellipsis;
 		max-width: 100%;
 		font-size: 11px;
+	}
+	.box-details > span.treasury {
+		position: absolute;
+		top: 0px;
+		transform: translateY(-100%);
+		z-index: 1;
+		background: rgb(0 0 0 / 60%);
+		left: 0px;
+		right: 0px;
+		border-radius: 0;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		font-size: 12px;
 	}
 	.b-details {
 		background: #F5F5F5;
@@ -425,9 +472,8 @@ a.fancybox img {
 			background-size: cover;
 			border-radius: 17px;
 			overflow: hidden;
-			padding: 10px 25px;
 			margin: 20px 0px;
-			min-height: 235px;
+			min-height: 210px;
 			display: flex;
 			flex-direction: column;
 			justify-content: end;
@@ -444,7 +490,8 @@ a.fancybox img {
 				padding: 2px 7px;
 			}
 			.box-game-list .game-text {
-				z-index: 1;
+				padding: 10px 25px;
+				background: linear-gradient(177.7deg, rgba(0, 0, 0, 0) 24.86%, rgba(0, 0, 0, 0.6) 70.94%);
 			}
 			.box-game-list .game-text span {
 					background: var(--bg-gradient);
@@ -457,26 +504,21 @@ a.fancybox img {
 					overflow: hidden;
 					text-overflow: ellipsis;
 					max-width: 100%;
+					font-size: 13px;
 				}
 				.box-game-list .game-text h4 {
 					white-space: nowrap;
 					overflow: hidden;
 					text-overflow: ellipsis;
+					margin-bottom: 0px;
+					font-size: 20px;
 				}
 				.box-game-list .game-text p {
-					-webkit-line-clamp: 2;
-					display: -webkit-box;
-					-webkit-box-orient: vertical;
+					white-space: nowrap;
 					overflow: hidden;
 					text-overflow: ellipsis;
+					margin-top: 0px;
 				}
-
-			.b-game-list::before {
-				content: "";
-				position: absolute;
-				inset: 0;
-				background: linear-gradient(177.7deg, #d7d7d7 24.86%, rgba(0, 0, 0, 0.6) 70.94%);
-			}
 
 .box-score-game {
 	background-color: #fff;
@@ -564,6 +606,7 @@ a.fancybox img {
 		max-width: 600px;
 		margin-left: auto;
 		margin-right: auto;
+		align-items: end;
 	}
 	.box-record > a {
 		border-bottom: 1px solid #F5F5F5;
@@ -670,6 +713,54 @@ a.fancybox img {
 					top: 50%;
 					transform: translateY(-50%);
 				}
+
+.b-record-qr {
+	display: flex;
+	background: var(--bg-gradient);
+	border-radius: 8px;
+	padding: 8px 11px;
+	position: relative;
+	margin-top: -11px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.b-record-qr > * {
+	z-index: 1;
+}
+.b-record-qr::before {
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	inset: 0;
+	opacity: 0.8;
+}
+	.b-record-qr img:not(.record-qr) {
+		margin-right: 6px;
+    margin-bottom: auto;
+    transform: translateY(5px);
+	}
+	.b-record-qr .b-record-text {
+		color: #666666;
+		font-size: 13px;
+		width: 100%;
+	}
+		.b-record-qr .b-record-text .text-gradient {
+			font-size: 16px;
+			font-weight: 400;
+		}
+		.b-record-qr .b-record-text p:not(.text-gradient) {
+			-webkit-line-clamp: 2;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: normal;
+		}
+
+	.b-record-qr img.record-qr {
+		margin: auto 2px auto 15px;
+    max-width: 100%;
+	}
 
 .box-profile3+.box-record {
 	border-top-width: 90px;
@@ -822,6 +913,7 @@ a.fancybox img {
 		}
 		.box-list-product .b-record-text {
 			padding: 10px;
+			position: relative;
 		}		
 			.box-list-product .b-record-text > span {
 				background: var(--bg-gradient);
@@ -834,6 +926,26 @@ a.fancybox img {
 				text-overflow: ellipsis;
 				max-width: 100%;
 				font-size: 11px;
+			}
+			.box-list-product .b-record-text > span.treasury {
+				position: absolute;
+				top: 0px;
+				transform: translateY(-100%);
+				z-index: 1;
+				background: rgb(0 0 0 / 60%);
+				left: 0px;
+				right: 0px;
+				border-radius: 0;
+				padding-top: 3px;
+				padding-bottom: 3px;
+				font-size: 12px;
+			}
+			.box-list-product .b-record-text > span.treasury.soldout {
+				aspect-ratio: 156 / 124;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 16px;
 			}
 			.box-list-product .b-record-text > p {
 				margin: 0px;
@@ -854,6 +966,7 @@ a.fancybox img {
 				top: 0px;
 				color: #fff;
 				overflow: hidden;
+				z-index: 1;
 			}
 				.box-list-product .box-numbercoins * {
 					position: relative;
@@ -1102,6 +1215,15 @@ body.orderscore .box-orderscore {
 			transform: rotate(180deg);
 		}
 
+div#popup-content {
+	border-radius: 16px;
+}
+	button.fancybox-button {
+		border-radius: 50%;
+		background: url(../images/fancybox-close.png) no-repeat center;
+		color: transparent !important;
+	}
+
 .box-tabmenu {
 	background: rgb(0 0 0 / 10%);
 	border-radius: 4px;
@@ -1141,6 +1263,7 @@ body.orderscore .box-orderscore {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 600px;
+	box-shadow: 3px 4px 5.5px 0px rgb(0 0 0 / 29%);
 }
 	.box-menu-bottom .iconB {
 		display: flex;
@@ -1512,6 +1635,11 @@ header .box-search .input-group {
 	-ms-flex-align: center !important;
 	align-items: center !important;
 }
+.justify-content-center {
+	-webkit-box-pack: center!important;
+	-ms-flex-pack: center!important;
+	justify-content: center!important
+}
 .d-flex {
 	display: -ms-flexbox !important;
 	display: flex !important;
@@ -1555,6 +1683,9 @@ img {
 h1, h2, h3, h4, h5, h6 {
 	margin-top: 0;
 	margin-bottom: .5rem;
+}
+.font-weight-bold {
+	font-weight: 700 !important;
 }
 *, ::after, ::before {
 	box-sizing: border-box;

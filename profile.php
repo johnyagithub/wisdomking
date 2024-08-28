@@ -36,6 +36,7 @@
         <a href="#" class="b-record">ข้อมูลการจองของฉัน</a>
         <a href="record.php" class="b-record">ประวัติ</a>
         <a href="myscore.php" class="b-record">คะแนนของฉัน</a>
+        <a href="record-video.php" class="b-record">ประวัติรายการวีดีโอ</a>
 
         <a href="#" class="b-record text-gradient text-center">
           <u class="text-gradient">ลบข้อมูลทั้งหมด</u>
