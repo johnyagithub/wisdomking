@@ -24,7 +24,7 @@
         <h4 class="text-center pt-4">เกมส์</h4> 
         <div class="box-game-list">
 
-          <a href="#">
+          <a href="game1.php">
             <div class="b-game-list" style="background-image: url(assets/images/game1/cover.jpg);">
               <span>New</span>
               <div class="game-text">
