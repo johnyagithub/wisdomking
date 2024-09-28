@@ -25,7 +25,7 @@
         <div class="box-game-list">
 
           <a href="#">
-            <div class="b-game-list" style="background-image: url(https://via.placeholder.com/700x240/d7d7d7/ffffff);">
+            <div class="b-game-list" style="background-image: url(assets/images/game1/cover.jpg);">
               <span>New</span>
               <div class="game-text">
                 <span>Lorem</span>
@@ -34,9 +34,9 @@
               </div>
             </div>
           </a>
-
+          
           <a href="#">
-            <div class="b-game-list">
+            <div class="b-game-list" style="background-image: url(https://via.placeholder.com/700x240/d7d7d7/ffffff);">
               <div class="game-text">
                 <span>Lorem</span>
                 <h4>GAME 2</h4>
@@ -44,9 +44,9 @@
               </div>
             </div>
           </a>
-
+          
           <a href="#">
-            <div class="b-game-list">
+            <div class="b-game-list" style="background-image: url(https://via.placeholder.com/700x240/d7d7d7/333333);">
               <div class="game-text">
                 <span>Lorem</span>
                 <h4>GAME 3</h4>
