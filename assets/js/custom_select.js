@@ -7,7 +7,7 @@ $(function () {
     ll = selElmnt.length;
     a = document.createElement("DIV");
     a.setAttribute("class", "select-selected");
-    if (selElmnt.options[selElmnt.selectedIndex] !== null) {
+    if (selElmnt.options[selElmnt.selectedIndex].getAttribute("img") !== null) {
       imgIndex = "background-image: url(assets/images/game1/" + selElmnt.options[selElmnt.selectedIndex].getAttribute("img") + ");";
     } else {
       imgIndex = "";
