@@ -7,6 +7,12 @@ $(function () {
     ll = selElmnt.length;
     a = document.createElement("DIV");
     a.setAttribute("class", "select-selected");
+    if (selElmnt.options[selElmnt.selectedIndex] !== null) {
+      imgIndex = "background-image: url(assets/images/game1/" + selElmnt.options[selElmnt.selectedIndex].getAttribute("img") + ");";
+    } else {
+      imgIndex = "";
+    }
+    a.setAttribute('style', imgIndex)
     a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
     s = selElmnt.options[selElmnt.selectedIndex].getAttribute("value");
     x[i].appendChild(a);
